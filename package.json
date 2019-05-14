@@ -1,0 +1,12 @@
+{
+  "name": "utilityapp",
+  "version": "1.0.0",
+  "description": "samples of typescript language",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "execute": "npm run build && node build/app.js"
+  },
+  "author": "Raghavendra T.H.",
+  "license": "MIT"
+}
