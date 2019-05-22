@@ -5,10 +5,11 @@ import { Userbean } from './user-bin/user-bin'
 export class App {
 
     constructor() {
-        this.msgTest()
-        this.authTest()
-        this.userTest()
-        this.beanTest()
+        // this.msgTest()
+        // this.authTest()
+        // this.userTest()
+        // this.beanTest()
+        this.getEmails("test@gmail.com,test1@gmail.com");
     }
 
     msgTest() {
@@ -21,6 +22,12 @@ export class App {
         auth.login('raghu', '1234')
         auth.logout('raghu')
 
+    }
+
+    getEmails(emailsIds: string) {
+        //     /[\s,]+/
+        let emailList = emailsIds.split(/[;,]+/)
+        console.log('emailList ::::: ', emailList)
     }
     userTest() {
         let auth = new AuthController()
